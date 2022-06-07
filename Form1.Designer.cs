@@ -32,7 +32,6 @@
             this.UxfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UxstartNewGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UxexitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UxfileToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.UxhelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UxaboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Uxbutton1 = new System.Windows.Forms.Button();
@@ -63,8 +62,7 @@
             // 
             this.UxfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UxstartNewGameToolStripMenuItem,
-            this.UxexitToolStripMenuItem,
-            this.UxfileToolStripMenu});
+            this.UxexitToolStripMenuItem});
             this.UxfileToolStripMenuItem.Name = "UxfileToolStripMenuItem";
             this.UxfileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.UxfileToolStripMenuItem.Text = "File";
@@ -74,6 +72,7 @@
             this.UxstartNewGameToolStripMenuItem.Name = "UxstartNewGameToolStripMenuItem";
             this.UxstartNewGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.UxstartNewGameToolStripMenuItem.Text = "Start New Game";
+            this.UxstartNewGameToolStripMenuItem.Click += new System.EventHandler(this.UxstartNewGameToolStripMenuItem_Click);
             // 
             // UxexitToolStripMenuItem
             // 
@@ -81,12 +80,6 @@
             this.UxexitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.UxexitToolStripMenuItem.Text = "Exit";
             this.UxexitToolStripMenuItem.Click += new System.EventHandler(this.UxexitToolStripMenuItem_Click);
-            // 
-            // UxfileToolStripMenu
-            // 
-            this.UxfileToolStripMenu.Name = "UxfileToolStripMenu";
-            this.UxfileToolStripMenu.Size = new System.Drawing.Size(180, 22);
-            this.UxfileToolStripMenu.Text = "File";
             // 
             // UxhelpToolStripMenuItem
             // 
@@ -146,7 +139,7 @@
             this.Uxbutton5.Size = new System.Drawing.Size(95, 91);
             this.Uxbutton5.TabIndex = 5;
             this.Uxbutton5.UseVisualStyleBackColor = true;
-            this.Uxbutton5.Click += new System.EventHandler(this.button5_Click);
+            this.Uxbutton5.Click += new System.EventHandler(this.Uxbutton5_Click);
             // 
             // Uxbutton6
             // 
@@ -229,6 +222,5 @@
         private System.Windows.Forms.Button Uxbutton7;
         private System.Windows.Forms.Button Uxbutton8;
         private System.Windows.Forms.Button Uxbutton9;
-        private System.Windows.Forms.ToolStripMenuItem UxfileToolStripMenu;
     }
 }
